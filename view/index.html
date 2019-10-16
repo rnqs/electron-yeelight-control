@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yeelight Control</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="buttons">
+            <button id="turnon" onclick="turnOn()">Turn On</button>
+            <button id="turnoff" onclick="turnOff()">Turn Off</button>
+        </div>
+        <div id="setcolor">
+            <div class="slidecontainer">
+                <input type="range" min="0" max="255" value="123" class="slider" id="R">
+                <input type="range" min="0" max="255" value="124" class="slider" id="G">
+                <input type="range" min="0" max="255" value="125" class="slider" id="B">
+            </div>
+            <button id="setcolorbtn">Set Color</button>
+        </div>
+    </div>
+
+    <script src="./color.js"></script>
+    <script src="../config/functions.js"></script>
+</body>
+
+</html>

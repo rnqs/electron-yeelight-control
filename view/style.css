@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Inter;
+    src: url(./Inter.var.woff2);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #2F343F;
+}
+
+div#main {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+div#buttons {
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+div#buttons button {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 20px;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div#buttons button#turnon {
+    background-color: rgb(52, 120, 75);
+    box-shadow: rgba(52, 120, 75, 0.5) 2px 2px 2px;
+}
+
+div#buttons button#turnoff {
+    background-color: rgb(255, 110, 75);
+    box-shadow: rgba(255, 110, 75, 0.5) 2px 2px 2px;
+}
+
+div#setcolor {
+    width: 240px;
+    padding: 20px 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div#setcolor button {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+div.slidecontainer {
+    height: 115px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 99%;
+    height: 15px;
+    background: #ffffff;
+    outline: none;
+    border-radius: 25px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#R::-webkit-slider-thumb {
+    background: rgb(255, 110, 75);
+}
+
+#G::-webkit-slider-thumb {
+    background: rgb(52, 120, 75);
+}
+
+#B::-webkit-slider-thumb {
+    background: rgb(52, 93, 120);
+}
