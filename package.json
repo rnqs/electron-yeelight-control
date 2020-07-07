@@ -9,7 +9,7 @@
     "start": "electron main.js"
   },
   "dependencies": {
-    "electron": "^6.0.11",
+    "electron": "^7.2.4",
     "node-yeelight-wifi": "^0.1.4"
   }
 }
